@@ -5,34 +5,34 @@ describe 'Card' do
 
   describe 'card properties' do
     it 'accepts card number' do
-      card = ConektaMotion::Card.new '4242 4242 4242 4242'
+      card = CM::Card.new '4242 4242 4242 4242'
 
       card.number.should == '4242 4242 4242 4242'
     end
 
     it 'accepts card holder name' do
-      card = ConektaMotion::Card.new '4242 4242 4242 4242',
+      card = CM::Card.new '4242 4242 4242 4242',
         'Juan Perez'
 
       card.name.should == 'Juan Perez'
     end
 
     it 'accepts CVC code' do
-      card = ConektaMotion::Card.new '4242 4242 4242 4242',
+      card = CM::Card.new '4242 4242 4242 4242',
         'Juan Perez', '001'
 
       card.cvc.should == '001'
     end
 
     it 'accepts expiration month' do
-      card = ConektaMotion::Card.new '4242 4242 4242 4242',
+      card = CM::Card.new '4242 4242 4242 4242',
         'Juan Perez', '001', '01'
 
       card.expiration_month.should == '01'
     end
 
     it 'accepts expiration year' do
-      card = ConektaMotion::Card.new '4242 4242 4242 4242',
+      card = CM::Card.new '4242 4242 4242 4242',
         'Juan Perez', '001', '01', '2014'
 
       card.expiration_year.should == '2014'
@@ -200,6 +200,14 @@ describe 'Card' do
         }
       }
 _JSON_
+    end
+  end
+
+  describe '#last_four' do
+    it 'returns card number last four digits' do
+      @card.number = '4242 4242 4242 4242'
+
+      @card.last_four.should == '4242'
     end
   end
 end

@@ -28,6 +28,10 @@ module ConektaMotion
 _JSON_
     end
 
+    def last_four
+      clean_number.reverse[0..3].reverse
+    end
+
     def valid?
       @errors = {}
 

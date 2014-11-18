@@ -1,3 +1,3 @@
 module ConektaMotion
-  ::CK = ConektaMotion unless defined?(::CK)
+  ::CM = ConektaMotion unless defined?(::CM)
 end
