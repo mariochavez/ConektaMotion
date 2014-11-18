@@ -15,3 +15,6 @@ nbproject
 .sass-cache
 .idea
 .dat*.*
+*.swp
+*.~un
+vendor
