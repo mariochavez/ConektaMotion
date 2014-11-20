@@ -6,6 +6,9 @@ require 'afmotion'
 
 Motion::Project::App.setup do |app|
   core_lib = File.join(File.dirname(__FILE__), 'conekta-motion')
+  constants_lib = File.dirname(__FILE__)
+
+  app.files.insert(0, File.join(constants_lib, 'constants.rb'))
 
   # scans app.files until it finds app/ (the default)
   # if found, it inserts just before those files, otherwise it

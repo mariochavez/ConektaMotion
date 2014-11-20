@@ -3,7 +3,7 @@ describe 'Conekta' do
 
   before do
     disable_network_access!
-    @conekta = ConektaMotion::Conekta.new 'key_DzVhxySdJAfmboDePSVUCuQ'
+    @conekta = ConektaMotion::Conekta.new
   end
 
   context '#tokenize' do
