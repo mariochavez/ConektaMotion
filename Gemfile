@@ -2,11 +2,6 @@ source 'https://rubygems.org'
 
 gem 'rake'
 gem 'motion-redgreen'
+gem 'webstub'
 
 gemspec
-
-gem 'afmotion'
-
-gem 'cocoapods', '~> 0.33.1'
-gem 'motion-cocoapods'
-

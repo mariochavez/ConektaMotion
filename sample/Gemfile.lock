@@ -1,5 +1,5 @@
 PATH
-  remote: .
+  remote: ../
   specs:
     conekta-motion (0.1.0)
       afmotion
@@ -10,6 +10,8 @@ PATH
 GEM
   remote: https://rubygems.org/
   specs:
+    ProMotion (2.0.1)
+      methadone (~> 1.4)
     activesupport (3.2.21)
       i18n (~> 0.6, >= 0.6.4)
       multi_json (~> 1.0)
@@ -50,16 +52,16 @@ GEM
     fuzzy_match (2.0.4)
     i18n (0.6.11)
     json_pure (1.8.1)
+    methadone (1.8.0)
+      bundler
     motion-cocoapods (1.5.0)
       cocoapods (>= 0.32.1)
-    motion-redgreen (0.1.0)
     motion-require (0.2.0)
     multi_json (1.10.1)
     nap (0.8.0)
     netrc (0.8.0)
     open4 (1.3.4)
     rake (10.3.2)
-    webstub (1.1.2)
     xcodeproj (0.17.0)
       activesupport (~> 3.0)
       colored (~> 1.2)
@@ -68,7 +70,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  ProMotion (~> 2.0.0)
   conekta-motion!
-  motion-redgreen
   rake
-  webstub

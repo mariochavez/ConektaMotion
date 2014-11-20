@@ -15,17 +15,16 @@ module ConektaMotion
       @errors = {}
     end
 
-    def to_json
-      <<_JSON_
-      {"card:" {
-        "name:" "#{name.to_s}",
-        "number:" "#{clean_number.to_s}",
-        "cvc:" "#{cvc.to_s}",
-        "exp_month:" "#{expiration_month.to_s}",
-        "exp_year:" "#{expiration_year.to_s}"
+    def to_hash
+      {
+        card: {
+          name: name.to_s,
+          number: clean_number.to_s,
+          cvc: cvc.to_s,
+          exp_month: expiration_month.to_s,
+          exp_year: expiration_year.to_s
         }
       }
-_JSON_
     end
 
     def last_four

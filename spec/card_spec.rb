@@ -182,7 +182,7 @@ describe 'Card' do
     end
   end
 
-  describe '#to_json' do
+  describe '#to_hash' do
     it 'serialize card data' do
       @card.number = '4242 4242 4242 4242'
       @card.name = 'Juan Perez'
@@ -190,16 +190,15 @@ describe 'Card' do
       @card.expiration_month = '02'
       @card.expiration_year = '18'
 
-      @card.to_json.should == <<_JSON_
-      {"card:" {
-        "name:" "Juan Perez",
-        "number:" "4242424242424242",
-        "cvc:" "090",
-        "exp_month:" "02",
-        "exp_year:" "18"
+      @card.to_hash.should == { card:
+        {
+          name: "Juan Perez",
+          number: "4242424242424242",
+          cvc: "090",
+          exp_month: "02",
+          exp_year: "18"
         }
       }
-_JSON_
     end
   end
 
