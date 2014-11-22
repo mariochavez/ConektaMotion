@@ -8,6 +8,8 @@ module ConektaMotion
       web_client.post('/tokens', card.to_hash) do |response|
         token = nil
 
+        NSLog "DEBUG [#tokenize_card] >> #{response.inspect}"
+
         if response.failure?
           unless response.error.is_a?(NSURLError)
             token = Token.init_from response.object
