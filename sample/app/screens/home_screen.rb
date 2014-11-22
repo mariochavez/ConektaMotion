@@ -107,11 +107,11 @@ class HomeScreen < PM::Screen
   end
 
   def setup_month_field
-    setup_field [[10, 170], [80, 40]], 'Mes'
+    setup_field [[10, 170], [80, 40]], 'MM'
   end
 
   def setup_year_field
-    setup_field [[100, 170], [80, 40]], 'Año'
+    setup_field [[100, 170], [80, 40]], 'AA'
   end
 
   def setup_cvc_field
