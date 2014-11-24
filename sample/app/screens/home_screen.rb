@@ -88,6 +88,19 @@ class HomeScreen < PM::Screen
     true
   end
 
+  def textField(field, shouldChangeCharactersInRange:range, replacementString:replacement)
+    length = if field == @number_field
+      19
+    elsif field == @month_field || field == @year_field
+      2
+    else
+      4
+    end
+
+    return false if field.text.length >= length && range.length == 0
+    true
+  end
+
   private
   def show_spinner
     SVProgressHUD.showWithMaskType SVProgressHUDMaskTypeBlack
