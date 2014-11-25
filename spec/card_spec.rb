@@ -33,9 +33,9 @@ describe 'Card' do
 
     it 'accepts expiration year' do
       card = CM::Card.new '4242 4242 4242 4242',
-        'Juan Perez', '001', '01', '2014'
+        'Juan Perez', '001', '01', '14'
 
-      card.expiration_year.should == '2014'
+      card.expiration_year.should == '14'
     end
   end
 
