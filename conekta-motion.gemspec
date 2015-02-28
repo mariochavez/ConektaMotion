@@ -19,6 +19,6 @@ Gem::Specification.new do |gem|
 
   gem.add_dependency 'dbt'
   gem.add_dependency 'afmotion'
-  gem.add_dependency 'cocoapods', '~> 0.33.1'
+  gem.add_dependency 'cocoapods'
   gem.add_dependency 'motion-cocoapods'
 end
