@@ -10,7 +10,7 @@ A Rubymotion gem to help you to tokenize a Bank Card with mexican payment gatewa
 This library depends on [`AFMotion`](https://github.com/clayallsopp/afmotion) which is wrapper for `AFNetworking`.
 
 ## Usage
-`ConektaMotion::Card` object helps you to collect Bank Card information and perform basic validations before any is sent via `SSL` to Conekta.io.
+`ConektaMotion::Card` object helps you to collect Bank Card information and perform basic validations before anything is sent via `SSL` to Conekta.io.
 
     card = CM::Card.new '4242 4242 4242 4242', 'Juan Perez', '090', '02', '18'
 
