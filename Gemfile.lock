@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    conekta-motion (0.1.0)
+    conekta-motion (0.1.1)
       afmotion
       cocoapods
       dbt

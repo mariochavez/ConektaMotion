@@ -9,7 +9,7 @@ Gem::Specification.new do |gem|
   gem.email = ['mario.chavez@gmail.com']
   gem.summary = %{Rubymotion library to use payment gateway Conekta.io}
   gem.description = <<-DESC
- ConektaMotion allows an iOS app to perform payment operations with Conekta.io
+ ConektaMotion allows your Rubymotion app to tokenize a Bank Card with Conekta.io payment gateway.
   DESC
   gem.homepage = 'https://github.com/mariochavez/conekta-motion'
   gem.files = Dir.glob('lib/**/*.rb')
