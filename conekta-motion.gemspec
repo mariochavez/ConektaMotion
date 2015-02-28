@@ -4,7 +4,7 @@ require File.expand_path('../lib/conekta-motion/version.rb', __FILE__)
 Gem::Specification.new do |gem|
   gem.name = 'conekta-motion'
   gem.version = ConektaMotion::VERSION
-  gem.licenses = ['BSD']
+  gem.licenses = ['MIT']
   gem.authors = ['Mario A. Chavez']
   gem.email = ['mario.chavez@gmail.com']
   gem.summary = %{Rubymotion library to use payment gateway Conekta.io}
