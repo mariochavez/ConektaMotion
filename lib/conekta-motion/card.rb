@@ -67,7 +67,7 @@ module ConektaMotion
     def valid_card?
       reversed_number = clean_number.reverse
 
-      relative_number = {'0' => 0, '1' => 2, '2' => 4, '3' => 6, '4' => 8, '5' => 1, '6' => 3, '7' => 5, '8' => 7, '9' => 9}
+      relative_number = { '0' => 0, '1' => 2, '2' => 4, '3' => 6, '4' => 8, '5' => 1, '6' => 3, '7' => 5, '8' => 7, '9' => 9 }
 
       accumulator = 0
 
